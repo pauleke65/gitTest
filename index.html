@@ -1,0 +1,445 @@
+<html><head>
+	<title>Python Scratchpad</title>
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/highlight.js/styles/default.css">
+	<link rel="stylesheet" type="text/css" href="/static/fineuploader-3.2.css">
+	<script src="/static/jquery.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.js"></script>
+    <script src="/static/jquery.fineuploader-3.2.min.js"></script>
+    <script src="/static/highlight.js/highlight.pack.js"></script>
+</head>
+<body style="">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span10 offset1">
+				<br>
+
+		    	<a href="/">
+		    		<h1 style="float: left">Python Scratchpad</h1>
+		    	</a>
+		    	<a href="/about/">
+		    		<img class="large-about-icon" src="/static/about-icon.png">
+		    	</a>
+
+		    	<h4>some pre chewed python stuff</h4>
+		    	<style>
+		    	.large-about-icon {
+				  width: 24px;  // 14px * 2
+				  height: 24px; // 14px * 2
+				  float: left;
+				  clear: right;
+				  margin-top: 22px;
+				  margin-left: 20px;
+				  margin-bottom: 5px;
+				}
+		    	</style>
+
+		    	<hr>
+		    	
+
+				
+	<form style="float: none; width: 91%; margin: 0px" class="input-append span10" method="GET">
+  		<input type="text" id="appendedInputButtons" name="query">
+  		<button type="submit" class="btn">Search</button>
+	</form>
+	<br>
+	
+	<a style="font-size: 15px;" href="/?keyword=api">api</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=backprop">backprop</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=bootstrap">bootstrap</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=c">c</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=ctypes">ctypes</a>
+	
+	<a style="font-size: 21px;" href="/?keyword=django">django</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=electronics">electronics</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=fabric">fabric</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=http">http</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=introspection">introspection</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=ipython">ipython</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=jquery">jquery</a>
+	
+	<a style="font-size: 17px;" href="/?keyword=machine-learning">machine-learning</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=neural-network">neural-network</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=numpy">numpy</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=pdf">pdf</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=pil">pil</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=pisa">pisa</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=proxieve">proxieve</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=proxy">proxy</a>
+	
+	<a style="font-size: 25px;" href="/?keyword=python">python</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=rest">rest</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=ssh">ssh</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=stack">stack</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=threading">threading</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=tumblr">tumblr</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=virtualenv">virtualenv</a>
+	
+	<a style="font-size: 15px;" href="/?keyword=wsgi">wsgi</a>
+	
+	<a href="/titles/">
+		<h4>Just give me all the titles</h4>
+	</a>
+	<hr>
+
+	
+		
+			<h2>
+	<a href="/post/my-favorite-webdev-stack/">
+		My favorite webdev stack
+	</a>
+</h2>
+
+
+<div class="tags">
+
+	<a href="/?keyword=django">django</a>&nbsp;
+
+	<a href="/?keyword=stack">stack</a>&nbsp;
+
+	<a href="/?keyword=jquery">jquery</a>&nbsp;
+
+	<a href="/?keyword=bootstrap">bootstrap</a>&nbsp;
+
+</div>
+<br>
+
+<div id="post_content">
+	<p>One of the cool things about continuously developing web apps is that no matter how many you build, you keep improving the stack of technologies that you use. You keep the good ones and drop the mistakes. After more than 4 years of developing all sorts of projects this is my favorite stack from back to front:</p>
+
+<ul>
+<li>VPS with Debian (or Ubuntu)</li>
+<li>Apache 2 + mod_wsgi</li>
+<li>Django + MySQL</li>
+<li>Twitter bootstrap + JQuery</li>
+</ul>
+
+<p>Nowadays you're best off getting a cloud based <strong>Virtual Private Server (VPS)</strong> as a hosting platform. You get full control over the machine but it's easy to upgrade to more resources (memory, disk space, cpu cores etc) without having to move anything. It's also very cheap for what you get. A 1024MB (memory) VPS is about 10 euro a month. My personal preference is for <strong>Debian</strong>. It's a very stable distribution with great support. However, if your projects are going to be very bleeding edge (say, if it depends on the latest GPU drivers etc) you might want to opt for <strong>Ubuntu</strong>. Ubuntu is based on Debian but it's packages tend to be more up to date. For a production server with special security needs you might want to opt for <strong>CentOS</strong>. It's more difficult to set up and work with but it has a lot of security built in from the start (kernel hardening with selinux, more explicit network setup etc).</p>
+
+<p>It seems that the choice of web server is very important for the expected performance. However, in practice, the default option <a href="http://www.peterbe.com/plog/nginx-gunicorn-vs-mod_wsgi">seems</a> just fine. Using <strong>Apache 2</strong> in combination with <strong>mod_wsgi</strong> has a similar performance to say <strong>Gunicorn</strong> (which is made specifically for wsgi based apps). The reason for this has to do with how wsgi is handled by Apache. A wsgi script is a python script that loads the Django environment and waits to be assigned a request to handle. When Apache starts and requests come in multiple threads are started and stay open to handle additional requests. Because they stay open they can immediately handle the request and don't need to load the environment when the request comes in. Once a request comes in we've already passed Apache so it doesn't impact performance much. A downside to this is that a thread cannot handle another request until it's done processing the last one. If requests take a long time to complete the server will quickly become unresponsive when it runs out of threads (this is usually a fixed number in the Apache config). This makes Apache in combination with mod_wsgi unusable for websockets. For this you're better off adding <a href="http://www.gevent.org/">gevent</a> to the mix to handle these connections.</p>
+
+<p>Django is a given but there some backend choices to be made. The most important one is the database backend. I've used MySQL, PostgreSQL and SQLite. I hated PostgreSQL but that's probably mostly that I wasn't used to its workflow. Performance-wise PostgreSQL may be better, especially with complex queries (the word on the street is that its query optimizer is better) but this mostly kicks in when you actually need to perform more complex queries. It depends on your project but if the project doesn't specifically require very complex queries I'd stick with MySQL. It saves a great deal of headache. I've used SQLite for very small projects but it starts to perform poorly very very quickly even under light loads (remember that it's just an interface to a file, not a persistent daemon).
+In any case, with Django it's quite possible to switch database backend, migrate the data and not have to change a line of code (apart from the database settings themselves). Everything related to the database is abstracted away in the ORM and migration tools. To this end you'll be greatly aided by <a href="http://south.aeracode.org/">south</a>. South does a great job filling in the blanks such as synchronizing existing schemas with changes in your models.</p>
+
+<p>We've covered the backend extensively but what about the frontend? <a href="http://getbootstrap.com/">Twitter Bootstrap</a> is a one-stop shop for all your frontend needs. I love it! It features a huge, well maintained and correct set of frontend components and base css elements. It features a grid system to easily create fluid designs, all the most popular javascript widgets (like foldout menus, buttons, tabs, panels etc), icons, beautiful default typography and much much more. In some cases I've barely had to add more than a few lines of css.
+Bootstrap needs <a href="http://jquery.com/">JQuery</a> for most of it's widgets. Do I really need to explain how great JQuery is? If you're not familiar with JQuery I suggest you read about that next.</p>
+
+</div>
+
+<hr>
+		
+			<h2>
+	<a href="/post/adding-ssh-functionality-to-managepy/">
+		Adding SSH functionality to manage.py
+	</a>
+</h2>
+
+
+<div class="tags">
+
+	<a href="/?keyword=django">django</a>&nbsp;
+
+	<a href="/?keyword=ssh">ssh</a>&nbsp;
+
+	<a href="/?keyword=fabric">fabric</a>&nbsp;
+
+</div>
+<br>
+
+<div id="post_content">
+	<p>While you're developing a Django project you'll often find yourself using the same set of commands over and over. For example you have a live server and a development environment and you want to pull in the live database to your development environment every once in a while. Obviously doing something like that with a large database on a live server is going to result in a performance hit on the live server. If this is not an issue it's quite easy to add such functionality to <code>manage.py</code>.</p>
+
+<p>Normally what I would do is dump the database with <code>mysqldump</code>, copy the dump to the dev machine, remove the old database, create a fresh one and load the dump. All of this would be done using SSH. The first thing we need is a way to interface Python with SSH. We can do this with the <code>Fabric</code> library. To make sure we don't have to give our password with every command we need a keyless login between the dev machine and the live server. If we put this code in the right place it will automatically turn into a <code>manage.py</code> command.</p>
+
+<p>If you already have a keyless login from the dev machine to the live machine you can skip this paragraph. To get a keyless login going first generate a public ssh key on the dev machine with <code>ssh-keygen -t rsa</code>. Press enter when it asks for a passphrase. This will generate the public key in <code>.ssh/id_rsa.pub</code>. If you add the content of this file to the end of <code>.ssh/authorized_keys</code> on the live server you'll be able to login to the live server without a key. If this doesn't work you need to make sure <code>.ssh</code> has the right permissions (<code>700</code>) and <code>authorized_keys</code> has the right permissions (<code>640</code>).</p>
+
+<p>It might also be a good idea to set up a keyless login from the dev machine to the dev machine. This sounds silly but this way we can use <code>Fabric</code> to interact with the local machine as well. You can do this by adding the local <code>id_rsa.pub</code> to the local <code>authorized_keys</code>.</p>
+
+<p>Next we can test if we can interact with a remote host using <code>Fabric</code>:</p>
+
+<pre><code class="python">Python <span class="number">2.6</span><span class="number">.6</span> (r266:<span class="number">84292</span>, Dec <span class="number">26</span> <span class="number">2010</span>, <span class="number">22</span>:<span class="number">31</span>:<span class="number">48</span>) 
+[GCC <span class="number">4.4</span><span class="number">.5</span>] on linux2
+Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.
+<span class="prompt">&gt;&gt;&gt; </span><span class="keyword">from</span> fabric.api <span class="keyword">import</span> run, env
+<span class="prompt">&gt;&gt;&gt; </span><span class="keyword">from</span> fabric.contrib.console <span class="keyword">import</span> confirm
+<span class="prompt">&gt;&gt;&gt; </span>env.host_string = <span class="string">"www.rolfvandam.nl"</span>
+<span class="prompt">&gt;&gt;&gt; </span>response = run(<span class="string">"hostname"</span>)
+[www.rolfvandam.nl] run: hostname
+[www.rolfvandam.nl] out: myliveserver
+[www.rolfvandam.nl] out: 
+<span class="prompt">&gt;&gt;&gt; </span>response
+<span class="string">'myliveserver'</span>
+</code></pre>
+
+<p>Everything seems to work just fine. Now we need to create a management command. Documentation for this can be found <a href="https://docs.djangoproject.com/en/dev/howto/custom-management-commands/">here</a>. The basic idea is to create a directory <code>management/commands</code> in the app directory to which the commands belong. Just add a <code>__init__.py</code> to this directory to make it a valid Python location and create a file with the name of the command, in this case <code>db_sync_dev.py</code>. Add the following:</p>
+
+<pre><code class="python"><span class="keyword">from</span> __future__ <span class="keyword">import</span> with_statement
+<span class="keyword">from</span> django.core.management.base <span class="keyword">import</span> BaseCommand, CommandError
+
+<span class="class"><span class="keyword">class</span> <span class="title">Command</span><span class="params">(BaseCommand)</span>:</span>
+    help = <span class="string">'sync local database with remote database'</span>
+
+    <span class="function"><span class="keyword">def</span> <span class="title">handle</span><span class="params">(self, *args, **options)</span>:</span>
+        ...
+</code></pre>
+
+<p>The command should now be listed with <code>python manage.py</code> and whenever we run <code>python manage.py db_sync_dev</code> <code>handle</code> should be called.</p>
+
+<p>Now all we have to do is add some code to synchronize the database over ssh:</p>
+
+<pre><code class="python"><span class="keyword">from</span> __future__ <span class="keyword">import</span> with_statement
+<span class="keyword">from</span> django.core.management.base <span class="keyword">import</span> BaseCommand, CommandError
+<span class="keyword">from</span> fabric.api <span class="keyword">import</span> *
+<span class="keyword">from</span> fabric.contrib.console <span class="keyword">import</span> confirm
+<span class="keyword">import</span> socket
+<span class="keyword">from</span> datetime <span class="keyword">import</span> datetime
+
+<span class="keyword">from</span> myproject.settings <span class="keyword">import</span> DATABASES, local_root
+
+<span class="class"><span class="keyword">class</span> <span class="title">Command</span><span class="params">(BaseCommand)</span>:</span>
+    help = <span class="string">'sync local database with remote database'</span>
+
+    <span class="function"><span class="keyword">def</span> <span class="title">handle</span><span class="params">(self, *args, **options)</span>:</span>
+        env.host_string = <span class="string">"www.rolfvandam.nl"</span>
+        MYSQL_USER = DATABASES[<span class="string">'default'</span>][<span class="string">'USER'</span>]
+        MYSQL_PASSWORD = DATABASES[<span class="string">'default'</span>][<span class="string">'PASSWORD'</span>]
+        MYSQL_DATABASE = DATABASES[<span class="string">'default'</span>][<span class="string">'NAME'</span>]
+        self.stdout.write(<span class="string">"read remote database on %s:\n"</span>%(env.host_string))
+        dump =  run(<span class="string">"mysqldump -u %s -p%s %s"</span>%(
+                    MYSQL_USER,
+                    MYSQL_PASSWORD,
+                    MYSQL_DATABASE
+                ), quiet=<span class="built_in">True</span>
+        )
+        temp_filename = <span class="string">"%s/temp.sql"</span>%(local_root)
+        f = open(temp_filename, <span class="string">'w'</span>)
+        f.write(dump)
+        f.close()
+
+        run(<span class="string">"cd %s &amp;&amp; echo 'drop database %s; create database %s;' | python manage.py dbshell"</span>%(
+                local_root,
+                MYSQL_DATABASE,
+                MYSQL_DATABASE
+            )
+        )
+        run(<span class="string">"cd %s &amp;&amp; cat %s | python manage.py dbshell"</span>%(
+                local_root, 
+                temp_filename
+            )
+        )
+</code></pre>
+
+<p>This is the simplest example. Obviously you might want to add safeguards like backing the local database up first, variable/environment sanity checks etc.</p>
+
+</div>
+
+<hr>
+		
+			<h2>
+	<a href="/post/debugging-django-wsgi-issues/">
+		Debugging Django WSGI issues
+	</a>
+</h2>
+
+
+<div class="tags">
+
+	<a href="/?keyword=django">django</a>&nbsp;
+
+	<a href="/?keyword=wsgi">wsgi</a>&nbsp;
+
+</div>
+<br>
+
+<div id="post_content">
+	<p>One of the finicky parts of getting Django sites to work is making sure all the right dependencies can be found by the WSGI script. There are two kinds of errors: the kind with the white "Internal server error" message and the more friendly and verbose yellow errors Django spits out. The first occurs before the WSGI request dispatch (before the <code>django.core.handlers.wsgi.WSGIHandler()</code>) and the second after the request has already reached the Django app.</p>
+
+<p>The "Internal server error" doesn't tell you anything about what happened but the error log (usually <code>/var/log/apache2/error.log</code>) has all the information (use <code>tail</code>). Usually it refers to something it can't find which in turn indicates a library that either isn't installed or installed in a place that Python doesn't know about. When you import something into your namespace Python looks at every location in sys.path in turn until it finds a location where it can find what you're looking for. The bulk of errors stem from paths being in the wrong order or omitted from sys.path. Luckily we can reorder and edit sys.path before we let the app import anything.</p>
+
+<p>To figure out what's going wrong we should first figure out where the library is. For this example I'll assume Django. Just start up a Python shell and do the following:</p>
+
+<pre><code class="python">Python <span class="number">2.6</span><span class="number">.6</span> (r266:<span class="number">84292</span>, Dec <span class="number">26</span> <span class="number">2010</span>, <span class="number">22</span>:<span class="number">31</span>:<span class="number">48</span>) 
+[GCC <span class="number">4.4</span><span class="number">.5</span>] on linux2
+Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.
+<span class="prompt">&gt;&gt;&gt; </span><span class="keyword">import</span> django
+<span class="prompt">&gt;&gt;&gt; </span>django.get_version()
+<span class="string">'1.4.3'</span>
+<span class="prompt">&gt;&gt;&gt; </span>django.__file__
+<span class="string">'/usr/local/lib/python2.6/dist-packages/django/__init__.pyc'</span>
+</code></pre>
+
+<p>We now know where <code>django</code> normally is found and what version it is. Now we need to check if the WSGI script knows about <code>/usr/local/lib/python2.6/dist-packages/</code>. To do this we'll dump sys.path to the Apache error log. Add this to the top of your WSGI script:</p>
+
+<pre><code class="python"><span class="keyword">import</span> sys
+<span class="keyword">print</span> &gt;&gt; sys.stderr, sys.path
+</code></pre>
+
+<p>Restart Apache, access the site and check the error.log. You should see a dump of sys.path:</p>
+
+<pre><code class="json">[Mon Aug <span class="number">26</span> <span class="number">00</span>:<span class="number">01</span>:<span class="number">07</span> <span class="number">2013</span>] [error] ['/usr/local/lib/python2<span class="number">.6</span>/dist-packages/SimpleCV-<span class="number">1.3</span>-py2<span class="number">.6</span>.egg', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/pylearn2-<span class="number">0.1</span>dev-py2<span class="number">.6</span>.egg', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/argparse-<span class="number">1.2</span><span class="number">.1</span>-py2<span class="number">.6</span>.egg', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/Theano-<span class="number">0.6</span><span class="number">.0</span>rc3-py2<span class="number">.6</span>.egg', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/requests_oauthlib-<span class="number">0.3</span><span class="number">.2</span>-py2<span class="number">.6</span>.egg', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/oauthlib-<span class="number">0.5</span><span class="number">.0</span>-py2<span class="number">.6</span>.egg', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/requests-<span class="number">1.2</span><span class="number">.3</span>-py2<span class="number">.6</span>.egg', '/usr/lib/python2<span class="number">.6</span>', '/usr/lib/python2<span class="number">.6</span>/plat-linux2', '/usr/lib/python2<span class="number">.6</span>/lib-tk', '/usr/lib/python2<span class="number">.6</span>/lib-old', '/usr/lib/python2<span class="number">.6</span>/lib-dynload', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages', '/usr/local/lib/python2<span class="number">.6</span>/dist-packages/PIL', '/usr/lib/python2<span class="number">.6</span>/dist-packages', '/usr/lib/python2<span class="number">.6</span>/dist-packages/gst-<span class="number">0.10</span>', '/usr/lib/pymodules/python2<span class="number">.6</span>', '/usr/lib/pymodules/python2<span class="number">.6</span>/gtk-<span class="number">2.0</span>', '/usr/lib/python2<span class="number">.6</span>/dist-packages/wx-<span class="number">2.8</span>-gtk2-unicode']
+</code></pre>
+
+<p>Obviously in this instance everything is fine and you can find the path. If it weren't there you'd simply slide it in by replacing the dump with this in the WSGI script:</p>
+
+<pre><code class="sql">import sys
+sys.path.<span class="operator"><span class="keyword">insert</span>(<span class="number">0</span>, <span class="string">'/usr/local/lib/python2.6/dist-packages'</span>)
+</span></code></pre>
+
+<p>This should sort the problem right out by insert the path at the first place in the array. Python will look for <code>django</code> here first.</p>
+
+<p>Solving any other problems works the same way. You figure out where the library is installed that you want to be imported and you make sure Python looks there first by reordering the sys.path.</p>
+
+</div>
+
+<hr>
+		
+			<h2>
+	<a href="/post/django-pdf-view-with-pisa/">
+		A Django PDF view with pisa
+	</a>
+</h2>
+
+
+<div class="tags">
+
+	<a href="/?keyword=django">django</a>&nbsp;
+
+	<a href="/?keyword=python">python</a>&nbsp;
+
+	<a href="/?keyword=pisa">pisa</a>&nbsp;
+
+	<a href="/?keyword=pdf">pdf</a>&nbsp;
+
+</div>
+<br>
+
+<div id="post_content">
+	<p>The <code>pisa</code> library makes outputting PDF from a Django view ridiculously easy. The hardest part is probably getting all the dependencies set up properly since <code>pisa</code> relies on <code>reportlab</code> which is quite a large body of software.</p>
+
+<p><code>pisa</code> works with templates which are a subset of html and css that <code>pisa</code> knows how to convert to PDF. You can even render these templates using Django's templating system. Here's what a view looks like.</p>
+
+<p>First all the stuff we need:</p>
+
+<pre><code class="python"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse
+<span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render_to_response
+<span class="keyword">from</span> django.template.loader <span class="keyword">import</span> get_template
+<span class="keyword">from</span> django.template <span class="keyword">import</span> Context
+<span class="keyword">import</span> ho.pisa <span class="keyword">as</span> pisa
+<span class="keyword">import</span> cStringIO <span class="keyword">as</span> StringIO
+<span class="keyword">import</span> logging
+<span class="keyword">import</span> sys
+</code></pre>
+
+<p>Next if we want to <code>pisa</code> to be able to give us debugging info we need to set up it's error emission class:</p>
+
+<pre><code class="python"><span class="class"><span class="keyword">class</span> <span class="title">PisaHandler</span><span class="params">(logging.Handler)</span>:</span>
+    <span class="function"><span class="keyword">def</span> <span class="title">emit</span><span class="params">(self, record)</span>:</span>
+        <span class="keyword">print</span> &gt;&gt; sys.stderr, record
+
+logging.getLogger(<span class="string">"ho.pisa"</span>).addHandler(PisaHandler())
+</code></pre>
+
+<p>Next is our view:</p>
+
+<pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">html_to_pdf_response</span><span class="params">(html)</span>:</span>
+    result = StringIO.StringIO()
+    pdf = pisa.pisaDocument(
+            StringIO.StringIO(html.encode(<span class="string">"UTF-8"</span>)),
+            result
+    )
+
+    <span class="keyword">if</span> <span class="keyword">not</span> pdf.err:
+        <span class="keyword">return</span> HttpResponse(
+                result.getvalue(),
+                mimetype=<span class="string">'application/pdf'</span>
+        )
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> HttpResponse(<span class="string">'We had some errors'</span>)
+</code></pre>
+
+<p>We feed <code>html_to_pdf_response</code> the html as a string. We'll get to the content later. Normally we feed <code>pisa</code> it's templates as a file but by using <code>StringIO</code> we can fake this by adding a file reading interface.</p>
+
+<p>When we're done we simply return the result with HttpResponse and let the browser know what's coming by setting the proper mimetype.</p>
+
+<p>This way we can do all our template processing with Django, just like with our normal html views, by rendering the result as a string:</p>
+
+<pre><code class="python"><span class="keyword">from</span> django.template.loader <span class="keyword">import</span> render_to_string
+
+<span class="function"><span class="keyword">def</span> <span class="title">my_view</span><span class="params">(request)</span>:</span>
+    ...
+    rendered_html = render_to_string(<span class="string">"report.html"</span>, locals())
+    <span class="keyword">return</span> html_to_pdf_response(rendered_html)
+</code></pre>
+
+<p><code>report.html</code> can use all of the Django tricks like inheritance (Django handles this, not <code>pisa</code>) but only a subset of html and css is supported by <code>pisa</code>. The main thing to keep in mind is that all file paths are relative to the current directory when the rendering of the html to pdf takes place. Since this is unreliable it's best to resolve to absolute paths using the same method you'd use to set <code>TEMPLATE_DIRS</code> etc in your <code>settings.py</code> using the <code>__file__</code> member of the module. </p>
+
+<p>For example:</p>
+
+<pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">my_view</span><span class="params">(request)</span>:</span>
+    ...
+    resource_directory = os.path.abspath(os.path.dirname(__file__)+<span class="string">"../static/"</span>)
+    rendered_html = render_to_string(<span class="string">"report.html"</span>, locals())
+    <span class="keyword">return</span> html_to_pdf_response(rendered_html)
+</code></pre>
+
+<p>You can then use <code>{{ resource_directory }}</code> to refer to images etc in your html template.</p>
+
+<p>Here you can find the subset of html/css that <code>pisa</code> supports: <a href="http://xhtml2pdf.appspot.com/static/pisa-en.html">http://xhtml2pdf.appspot.com/static/pisa-en.html</a></p>
+
+</div>
+
+<hr>
+		
+		<script>hljs.initHighlightingOnLoad();</script>
+
+		<div class="pagination">
+		  <ul>
+		    <li class="disabled"><a href="?p=0&amp;query=&amp;keyword=">Prev</a></li>
+		    
+		    <li class="disabled"><a href="?p=1&amp;query=&amp;keyword=">1</a></li>
+		    
+		    <li><a href="?p=2&amp;query=&amp;keyword=">2</a></li>
+		    
+		    <li><a href="?p=2&amp;query=&amp;keyword=">Next</a></li>
+		  </ul>
+		</div>
+	
+
+
+				<hr>
+				<div class="tagline">
+					(c) <a href="http://www.rolfvandam.nl">Rolf van Dam</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="/static/markdown.js"></script>
+
+
+</body></html>
